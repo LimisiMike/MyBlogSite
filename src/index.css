@@ -1,0 +1,327 @@
+/* Home.css */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  background: url('./images/home2.jpg') no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+h1 {
+  color: rgb(232, 222, 222);
+  margin-bottom: 20px;
+}
+
+.home h2 {
+  color:#fff;
+}
+
+
+
+
+.navbar {
+  background-color: #5ea758;
+  overflow: hidden;
+  padding: 10px 20px;
+}
+
+.navbar-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-item {
+  margin-right: 20px;
+}
+
+.navbar-link {
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-link:hover {
+  background-color: #575757;
+  border-radius: 4px;
+}
+
+.navbar-button {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 8px 16px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-button:hover {
+  background-color: #575757;
+  border-radius: 4px;
+}
+
+/* Home component styles */
+.home-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-container h1 {
+  margin-bottom: 20px;
+}
+
+/* PostList component styles */
+.postlist-container {
+  margin: 20px;
+  padding: 50px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 40%;
+  
+}
+
+.postlist-container h1, .postlist-container h2 {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.posts {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* SinglePost component styles (if needed) */
+.single-post {
+  padding: 10px;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.single-post h3 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.single-post p {
+  margin: 10px 0;
+}
+
+
+/* CreatePost component styles */
+.create-post-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.create-post-input,
+.create-post-textarea {
+  width: 100%;
+  max-width: 600px; /* Adjust as necessary */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.create-post-input {
+  height: 40px; /* Fixed height for input */
+}
+
+.create-post-textarea {
+  min-height: 100px; /* Initial height */
+  resize: vertical; /* Only allows vertical resizing */
+}
+
+.create-post-button {
+  width: 600px;
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.create-post-button:hover {
+  background-color: #218838;
+}
+
+/* SinglePost component styles (if needed) */
+.single-post {
+  padding: 10px;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.single-post h3 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.single-post p {
+  margin: 10px 0;
+}
+
+/* Register.css */
+
+.register-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 35px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}
+
+.register-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.register-container p {
+  color: red;
+  text-align: center;
+}
+
+.register-input {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.register-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.register-button:hover {
+  background-color: #9ce36f;
+}
+
+
+/* Login.css */
+.auth-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 50px;
+  margin-top: 200px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.auth-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.auth-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.auth-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* PostCard.css */
+.post-card {
+  border: 1px solid #ddd;
+  padding: 16px;
+  margin-bottom: 16px;
+  background-color: #fff;
+  border-radius: 8px;
+  width: 30%; /* Adjust width to fit 3 in a row */
+  box-sizing: border-box; /* Ensure padding and border are included in width */
+}
+
+.post-card h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.post-card p {
+  max-height: 4.5em; /* Limit height for preview */
+  overflow: hidden; /* Hide overflow text */
+}
+
+.post-card-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+.post-card-buttons button {
+  flex: 1;
+  margin: 0 4px;
+  padding: 8px 12px;
+  border: none;
+  background-color: #28a745;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.post-card-buttons button:hover {
+  background-color: #9ce36f;
+}
+
+/* Container for all cards */
+.post-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: space-between;
+}
